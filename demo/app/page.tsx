@@ -1,7 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { MeiliSearch } from 'meilisearch';
-import { use, useEffect, useState } from 'react';
+import { SetStateAction, use, useEffect, useState } from 'react';
+import { Card } from './card/page';
 
 type Person = {
   id: string;
@@ -11,7 +12,7 @@ type Person = {
 
 export default function Home() {
   const [search, setSearch] = useState('');
-  const [people, setPeople] = useState<Person[]>([]);
+  const [people, setPeople] = useState<any>([]);
 
   useEffect(() => {
     const client = new MeiliSearch({
@@ -20,17 +21,24 @@ export default function Home() {
     });
     client
       .index('people')
-      .search()
-      .then((res) => console.log(res));
+      .search(search)
+      .then((res) => {
+        const people = res.hits;
+        setPeople(people);
+      });
   }, [search]);
+  console.log(people);
+  const handleSearchChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+    setSearch(event.target.value);
+  }
 
   return (
     <main>
       <h1>Find the person!</h1>
       <form>
-        <input name="query" />
-        <button type="submit">Search</button>
+        <input onChange={handleSearchChange} name="query" />
       </form>
+      <Card people={people} />
     </main>
   );
 }
