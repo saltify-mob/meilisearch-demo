@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <main className="flex justify-center">
-      <div className="border-2 border-black w-96 px-24 py-8 rounded-md">
+      <div className="border-2 border-black w-96 px-24 py-8 rounded-md bg-white">
         <h1 className="text-xl font-bold">Find the person!</h1>
         <form className="mb-6">
           <input onChange={handleSearchChange} name="query" />
