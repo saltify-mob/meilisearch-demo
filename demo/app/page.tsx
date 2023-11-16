@@ -28,17 +28,21 @@ export default function Home() {
       });
   }, [search]);
   console.log(people);
-  const handleSearchChange = (event: { target: { value: SetStateAction<string>; }; }) => {
+  const handleSearchChange = (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setSearch(event.target.value);
-  }
+  };
 
   return (
-    <main>
-      <h1>Find the person!</h1>
-      <form>
-        <input onChange={handleSearchChange} name="query" />
-      </form>
-      <Card people={people} />
+    <main className="flex justify-center">
+      <div>
+        <h1>Find the person!</h1>
+        <form>
+          <input onChange={handleSearchChange} name="query" />
+        </form>
+        <Card people={people} />
+      </div>
     </main>
   );
 }
