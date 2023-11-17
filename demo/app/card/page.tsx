@@ -1,22 +1,17 @@
-'use client';
-import { Hits } from 'meilisearch';
-import React from 'react'
+"use client";
+import { Hits } from "meilisearch";
+import React from "react";
 
-type Person = {
-  id: string;
-  name: string;
-  balance: string;
-};
 type Props = {
-  people: Person[];
-}
+  people: Hits<Record<string, any>>;
+};
 
-export const Card = ({people}: Props) => {
+export const Card = ({ people }: Props) => {
   return (
-    <div>{
-        people.map((p, index) => (
-          <p key={index}>{p.name}</p>
-        ))
-      }</div>
-  )
-}
+    <div>
+      {people.map((p, index) => (
+        <p key={index}>{p.name}</p>
+      ))}
+    </div>
+  );
+};
