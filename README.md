@@ -1,8 +1,10 @@
-
 <div align="center">
     <img src="https://github.com/saltify-mob/meilisearch-demo/assets/141512659/7c2d7485-3117-4970-81eb-eb15455ccc61" alt="Logo" height="300px">
 </div>
+
+<div align="center">
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/93320021/283743255-0ecf7143-f010-410b-aff8-14edc4113e43.gif" />
+</div>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -59,11 +61,6 @@ client
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
+* [Meilisearch Quick Start](https://www.meilisearch.com/docs/learn/getting_started/quick_start)
+* [Getting Start with Meilisearch Cloud](https://www.meilisearch.com/docs/learn/getting_started/cloud_quick_start)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
