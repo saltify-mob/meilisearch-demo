@@ -1,6 +1,6 @@
 # meilisearch-demo
+![saltify-logo](https://github.com/saltify-mob/meilisearch-demo/assets/141512659/115779c7-bff4-4263-a8f6-c3d4cf15c0c8)
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
@@ -17,48 +17,48 @@ A public demo, showcasing how to integrate meilisearch into a project.
 
 This is an example of how to list things you need to use the software and how to install them.
 
-1. Install Meilisearch.
+## Start with setting up the Meilisearch Cloud project and upload your data
 
+1. Follow the instructions on [Meilisearch Cloud](https://www.meilisearch.com/docs/learn/getting_started/cloud_quick_start).
+   
+2. When uploading your database file as an index, make sure that the Primary key name is the same as the id name in your JSON. We use a JSON file containing a list of people with id, name, and balance. Below, the primary key is "id":
+```sh
+[
+  {
+    "id": "6556187eb416523366f70aa0",
+    "name": "Holland Doyle",
+    "balance": "$1,488.20"
+  },
+  {
+    "id": "6556187e004a67820d0168a7",
+    "name": "Marylou Ochoa",
+    "balance": "$3,122.83"
+  }, ...
+```
+3. Install Meilisearch in your project src folder.
 
-  ```sh
+```sh
  npm install meilisearch
 
 ```
-2. Import below into your project.
+4. Import below into your project.
 
 ```sh
 import { MeiliSearch } from 'meilisearch'
 import movies from './movies.json'
 ```
-3. Use it in your project.
+5. Use it in your project. Make sure that the index name matches the name you specified in the Meilisearch Cloud dashboard, and that the url and api-key matches the ones in your Meilisearch project.
 
 ```sh
 const client = new MeiliSearch({
-  host: 'http://localhost:7700',
-  apiKey: 'aSampleMasterKey'
+  host: 'yourURL',
+  apiKey: 'yourAPIKey'
 })
-client.index('movies').addDocuments(movies)
-  .then((res) => console.log(res))
-
+client
+      .index("people")
+      .search(search)
+      .then((res) => console.log(res));
 ```
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
