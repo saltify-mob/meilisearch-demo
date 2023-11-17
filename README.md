@@ -1,6 +1,6 @@
 
 <div align="center">
-    <img src="https://github.com/saltify-mob/meilisearch-demo/assets/141512659/115779c7-bff4-4263-a8f6-c3d4cf15c0c8" alt="Logo" width="480" height="480">
+    <img src="https://github.com/saltify-mob/meilisearch-demo/assets/141512659/7c2d7485-3117-4970-81eb-eb15455ccc61" alt="Logo" height="300px">
 </div>
 ![](https://github-production-user-asset-6210df.s3.amazonaws.com/93320021/283743255-0ecf7143-f010-410b-aff8-14edc4113e43.gif)
 
