@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { MeiliSearch } from 'meilisearch';
+import { Hits, MeiliSearch } from 'meilisearch';
 import { SetStateAction, use, useEffect, useState } from 'react';
 import { Card } from './card/page';
 
@@ -12,13 +12,14 @@ type Person = {
 
 export default function Home() {
   const [search, setSearch] = useState('');
-  const [people, setPeople] = useState<any>([]);
+  const [people, setPeople] = useState<Person[]>([]);
+
+  const client = new MeiliSearch({
+    host: 'https://ms-23da8d068b58-6238.lon.meilisearch.io',
+    apiKey: '67259f4c8103fce551aacb916f40a9acf41ae6cd',
+  });
 
   useEffect(() => {
-    const client = new MeiliSearch({
-      host: 'https://ms-23da8d068b58-6238.lon.meilisearch.io',
-      apiKey: '67259f4c8103fce551aacb916f40a9acf41ae6cd',
-    });
     client
       .index('people')
       .search(search)
@@ -27,12 +28,13 @@ export default function Home() {
         setPeople(people);
       });
   }, [search]);
-  console.log(people);
   const handleSearchChange = (event: {
     target: { value: SetStateAction<string> };
   }) => {
     setSearch(event.target.value);
   };
+
+  console.log(people)
 
   return (
     <main className="flex justify-center">
