@@ -1,12 +1,9 @@
-# meilisearch-demo
-![saltify-logo](https://github.com/saltify-mob/meilisearch-demo/assets/141512659/115779c7-bff4-4263-a8f6-c3d4cf15c0c8)
 
-<br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+    <img src="https://github.com/saltify-mob/meilisearch-demo/assets/141512659/115779c7-bff4-4263-a8f6-c3d4cf15c0c8" alt="Logo" width="480" height="480">
 </div>
+![](https://github.com/saltify-mob/meilisearch-demo/assets/93320021/0ecf7143-f010-410b-aff8-14edc4113e43.gif)
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
