@@ -1,21 +1,15 @@
 <div align="center">
-    <img src="https://github.com/saltify-mob/meilisearch-demo/assets/141512659/7c2d7485-3117-4970-81eb-eb15455ccc61" alt="Logo" height="300px">
-</div>
-
-<div align="center">
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/93320021/283743255-0ecf7143-f010-410b-aff8-14edc4113e43.gif" />
+<img height="500" src="https://github-production-user-asset-6210df.s3.amazonaws.com/93320021/283743255-0ecf7143-f010-410b-aff8-14edc4113e43.gif" />
 </div>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+# About The Project
 
 A public demo, showcasing how to integrate meilisearch into a project.
 
-### Getting Started with Meilisearch
+## Getting Started with Meilisearch
 
-This is an example of how to list things you need to use the software and how to install them.
-
-## Start with setting up the Meilisearch Cloud project and upload your data
+### Start with setting up the Meilisearch Cloud project and upload your data
 
 1. Follow the instructions on [Meilisearch Cloud](https://www.meilisearch.com/docs/learn/getting_started/cloud_quick_start).
    
